@@ -121,7 +121,7 @@ export class Task {
     return changer.id === this.manager.id || changer.id === this.supervisor.id
   }
 
-  addSubTask(task: Task, changer:User) {
+  addSubTask(task: Task, changer:User) {``
     if (this.checkIfManagerOrSUper(changer)){
       this._childrenTasks.push(task);
     }
